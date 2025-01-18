@@ -1,0 +1,80 @@
+// Zed keymap
+
+//
+
+// For information on binding keys, see the Zed
+
+// documentation: https://zed.dev/docs/key-bindings
+
+//
+
+// To see the default key bindings run `zed: open default keymap`
+
+// from the command palette.
+
+[
+  {
+    "bindings": {
+      "ctrl-o": "pane::GoBack",
+      "ctrl-i": "pane::GoForward"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-shift-p": "command_palette::Toggle"
+    }
+  },
+  {
+    "context": "FileFinder",
+    "bindings": {
+      "ctrl": null
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "space w": ["workspace::SendKeystrokes", "ctrl-w"],
+      "alt-j": ["workspace::SendKeystrokes", "5 j"],
+      "alt-k": ["workspace::SendKeystrokes", "5 k"],
+      "space n": "project_panel::ToggleFocus",
+      "space i c": "assistant::InlineAssist",
+      "space c": "assistant::ToggleFocus",
+      "space m": "terminal_panel::ToggleFocus",
+      "space f f": "file_finder::Toggle",
+      "space l f": "editor::Format",
+      "space l r": "editor::Rename",
+      "space l a": "editor::ToggleCodeActions",
+      "space s s": "outline::Toggle",
+      "space s p": "project_symbols::Toggle",
+      "Y": ["workspace::SendKeystrokes", "y $"]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "escape": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "escape": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "space w": ["workspace::SendKeystrokes", "ctrl-w"],
+      "shift-s": ["vim::PushOperator", { "AddSurrounds": {} }],
+      "alt-j": ["workspace::SendKeystrokes", "5 j"],
+      "alt-k": ["workspace::SendKeystrokes", "5 k"]
+    }
+  }
+]
