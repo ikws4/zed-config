@@ -2,13 +2,23 @@
   "inline_completions": {
     "disabled_globs": [".env", "*.java"]
   },
+  "inlay_hints": {
+    "enabled": true,
+    "show_parameter_hints": false,
+    "show_other_hints": false
+  },
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-3-5-sonnet"
+      "model": "o1"
     },
     "enable_experimental_live_diffs": true,
     "version": "2"
+  },
+  "languages": {
+    "Rust": {
+      "tab_size": 4
+    }
   },
   "tab_size": 2,
   "vim_mode": true,
@@ -17,17 +27,17 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "Rosé Pine Moon"
   },
   "relative_line_numbers": true,
   "current_line_highlight": "none",
   "tab_bar": {
-    "show": false
+    "show": true
   },
   "toolbar": {
-    "breadcrumbs": false,
-    "quick_actions": false,
-    "selections_menu": false
+    "breadcrumbs": true,
+    "quick_actions": true,
+    "selections_menu": true
   },
   "format_on_save": "off",
   "scrollbar": {
@@ -36,7 +46,7 @@
   "vim": {
     "highlight_on_yank_duration": 300,
     "use_smartcase_find": true,
-    "use_system_clipboard": "on_yank"
+    "use_system_clipboard": "always"
   },
   "indent_guides": {
     "enabled": false

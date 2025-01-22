@@ -2,13 +2,19 @@
   {
     "bindings": {
       "ctrl-o": "pane::GoBack",
-      "ctrl-i": "pane::GoForward"
+      "ctrl-i": "pane::GoForward",
     }
   },
   {
     "context": "Workspace",
     "bindings": {
       "alt-shift-p": "command_palette::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-s": "workspace::SaveAll"
     }
   },
   {
@@ -30,6 +36,7 @@
       "alt-j": ["workspace::SendKeystrokes", "5 j"],
       "alt-k": ["workspace::SendKeystrokes", "5 k"],
       "space n": "project_panel::ToggleFocus",
+      "space shift-n": "project_panel::ToggleFocus",
       "space i c": "assistant::InlineAssist",
       "space c": "assistant::ToggleFocus",
       "space m": "terminal_panel::ToggleFocus",
@@ -39,6 +46,7 @@
       "space l a": "editor::ToggleCodeActions",
       "space s s": "outline::Toggle",
       "space s p": "project_symbols::Toggle",
+      "g i": "editor::GoToImplementation",
       "Y": ["workspace::SendKeystrokes", "y $"]
     }
   },
@@ -51,7 +59,7 @@
   {
     "context": "ProjectPanel",
     "bindings": {
-      "escape": "workspace::ToggleLeftDock"
+      //"escape": "workspace::ToggleLeftDock"
     }
   },
   {
