@@ -36,7 +36,7 @@
   "vim": {
     "highlight_on_yank_duration": 300,
     "use_smartcase_find": true,
-    "use_system_clipboard": "on_yank"
+    "use_system_clipboard": "always"
   },
   "indent_guides": {
     "enabled": false
