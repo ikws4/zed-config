@@ -68,7 +68,8 @@
       "space w": ["workspace::SendKeystrokes", "ctrl-w"],
       "shift-s": ["vim::PushOperator", { "AddSurrounds": {} }],
       "alt-j": ["workspace::SendKeystrokes", "5 j"],
-      "alt-k": ["workspace::SendKeystrokes", "5 k"]
+      "alt-k": ["workspace::SendKeystrokes", "5 k"],
+      "space l a": "editor::ToggleCodeActions"
     }
   }
 ]

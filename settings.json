@@ -10,7 +10,7 @@
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o1"
+      "model": "claude-3-5-sonnet"
     },
     "enable_experimental_live_diffs": true,
     "version": "2"
