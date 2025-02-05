@@ -33,6 +33,7 @@
     "context": "vim_mode == normal",
     "bindings": {
       "space w": ["workspace::SendKeystrokes", "ctrl-w"],
+      "ctrl-w c": "pane::CloseActiveItem",
       "alt-j": ["workspace::SendKeystrokes", "5 j"],
       "alt-k": ["workspace::SendKeystrokes", "5 k"],
       "space n": "project_panel::ToggleFocus",
