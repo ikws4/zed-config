@@ -34,8 +34,11 @@
     "bindings": {
       "space w": ["workspace::SendKeystrokes", "ctrl-w"],
       "ctrl-w c": "pane::CloseActiveItem",
+      "space z": "workspace::ToggleZoom",
       "alt-j": ["workspace::SendKeystrokes", "5 j"],
       "alt-k": ["workspace::SendKeystrokes", "5 k"],
+      "cmd-j": ["workspace::SendKeystrokes", "5 j"],
+      "cmd-k": ["workspace::SendKeystrokes", "5 k"],
       "space n": "project_panel::ToggleFocus",
       "space shift-n": "project_panel::ToggleFocus",
       "space i c": "assistant::InlineAssist",
@@ -48,7 +51,8 @@
       "space s s": "outline::Toggle",
       "space s p": "project_symbols::Toggle",
       "g i": "editor::GoToImplementation",
-      "Y": ["workspace::SendKeystrokes", "y $"]
+      "Y": ["workspace::SendKeystrokes", "y $"],
+      "enter": "editor::OpenExcerpts"
     }
   },
   {
@@ -70,7 +74,10 @@
       "shift-s": ["vim::PushOperator", { "AddSurrounds": {} }],
       "alt-j": ["workspace::SendKeystrokes", "5 j"],
       "alt-k": ["workspace::SendKeystrokes", "5 k"],
-      "space l a": "editor::ToggleCodeActions"
+      "cmd-j": ["workspace::SendKeystrokes", "5 j"],
+      "cmd-k": ["workspace::SendKeystrokes", "5 k"],
+      "space l a": "editor::ToggleCodeActions",
+      "space i c": "assistant::InlineAssist"
     }
   }
 ]

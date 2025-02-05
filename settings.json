@@ -7,6 +7,7 @@
     "show_parameter_hints": false,
     "show_other_hints": false
   },
+  "use_smartcase_search": true,
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
@@ -16,14 +17,18 @@
     "version": "2"
   },
   "languages": {
+    "Java": {
+      "show_inline_completions": false
+    },
     "Rust": {
       "tab_size": 4
     }
   },
+  "cursor_blink": false,
   "tab_size": 2,
   "vim_mode": true,
   "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "buffer_font_size": 22.0,
   "theme": {
     "mode": "system",
     "light": "One Light",
@@ -32,7 +37,7 @@
   "relative_line_numbers": true,
   "current_line_highlight": "none",
   "tab_bar": {
-    "show": true
+    "show": false
   },
   "toolbar": {
     "breadcrumbs": true,
@@ -55,5 +60,7 @@
     "indent_guides": {
       "show": "never"
     }
-  }
+  },
+  "pane_split_direction_horizontal": "down",
+  "pane_split_direction_vertical": "right"
 }
